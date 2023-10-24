@@ -66,5 +66,5 @@ app.add_url_rule(rule='/robot/', # WeRoBot 的绑定地址
                 methods=['GET', 'POST'])
 
 port = os.getenv("PORT")
-port = 8888 if port is None else port
+port = 80 if port is None else port
 app.run(host='0.0.0.0', port=port)
